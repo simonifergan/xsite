@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Meals & More</title>
+</head>
+
+<body onload="init()">
+    <header class="header wrapper">
+        <a title="Meals & More" href='/' class="header__logo">
+            <img src="assets/icons/icon-logo.svg" class="header__logo-icon" />
+            <h1 class="header__logo-text">Meals <span>&</span> More</h1>
+        </a>
+        <button onclick="toggleNav()" class="button button--toggle-nav"><img src="./assets/icons/menu.png" /></button>
+        <nav class="header__nav">
+            <ul>
+                <li><a class="header__nav-link" href="#">Best Meal Delivery</a></li>
+                <li><a class="header__nav-link" href="#">Reviews</a></li>
+                <li><a class="header__nav-link" href="#">Recipes</a></li>
+                <li><a class="header__nav-link" href="#">Learn</a></li>
+            </ul>
+        </nav>
+        <h2 class="header__mobile-text">Best Meal
+            Delivery Services</h2>
+    </header>
+
+    <section class="about">
+        <div class="about__content wrapper">
+            <h2>Best Meal Delivery Services</h2>
+            <p>Sign up for one of the meal delivery plans to save time, cook great meals and upgrade your lifestyle. Try
+                out
+                one of the meal delivery services below!</p>
+        </div>
+
+    </section>
+
+    <main class="main wrapper">
+        <section class="filters">
+            <div class="filters__container">
+                <button class="button button--filter button--filter-selected">All</button>
+                <button class="button button--filter">Vegan</button>
+                <button class="button button--filter">Keto</button>
+                <button class="button button--filter">Paleo</button>
+                <button class="button button--filter">Vegetarian</button>
+                <button class="button button--filter">Diet</button>
+                <button class="button button--filter">Low Carb</button>
+                <button class="button button--filter">Gluten Free</button>
+                <button class="button button--filter">Quick & Easy</button>
+            </div>
+            <button class="button button--modal">Advertisting Disclosure</button>
+        </section>
+
+        <section class="cards wrapper">
+            <article class="cards__items-container">
+                <div class="cards__item">
+                    <div class="cards__item-thumbnail">
+                        <button class="button button--play">
+                            <img src="./assets/img/play.png" />
+                        </button>
+                    </div>
+                    <div class="cards__item-content">
+                        <header>
+                            <img class="cards__item-logo" />
+                            <div class="cards__item-score">
+                                <span>Our Score:</span>
+                                <span>9.8</span>
+                            </div>
+                        </header>
+                        <ul class="cards__item-info">
+                            <li><img src="./assets/icons/v.svg" />$30 off your first order</li>
+                            <li><img src="./assets/icons/v.svg" />Healthy meals in 30 minutes</li>
+                            <li><img src="./assets/icons/v.svg" />Fresh ingredients, not frozen</li>
+                        </ul>
+                        <footer class="cards__item-footer">
+                            <button class="button button--read">Read Review</button>
+                            <button class="button button--order">Order Now</button>
+                        </footer>
+                    </div>
+
+                </div>
+                <div class="cards__item">
+                    <div class="cards__item-thumbnail">
+                        <button class="button button--play">
+                            <img src="./assets/img/play.png" />
+                        </button>
+                    </div>
+                    <div class="cards__item-content">
+                        <header>
+                            <img class="cards__item-logo" />
+                            <div class="cards__item-score">
+                                <span>Our Score:</span>
+                                <span>9.8</span>
+                            </div>
+                        </header>
+                        <ul class="cards__item-info">
+                            <li><img src="./assets/icons/v.svg" />$30 off your first order</li>
+                            <li><img src="./assets/icons/v.svg" />Healthy meals in 30 minutes</li>
+                            <li><img src="./assets/icons/v.svg" />Fresh ingredients, not frozen</li>
+                        </ul>
+                        <footer class="cards__item-footer">
+                            <button class="button button--read">Read Review</button>
+                            <button class="button button--order">Order Now</button>
+                        </footer>
+                    </div>
+
+                </div>
+                <div class="cards__item">
+                    <div class="cards__item-thumbnail">
+                        <button class="button button--play">
+                            <img src="./assets/img/play.png" />
+                        </button>
+                    </div>
+                    <div class="cards__item-content">
+                        <header>
+                            <img class="cards__item-logo" />
+                            <div class="cards__item-score">
+                                <span>Our Score:</span>
+                                <span>9.8</span>
+                            </div>
+                        </header>
+                        <ul class="cards__item-info">
+                            <li><img src="./assets/icons/v.svg" />$30 off your first order</li>
+                            <li><img src="./assets/icons/v.svg" />Healthy meals in 30 minutes</li>
+                            <li><img src="./assets/icons/v.svg" />Fresh ingredients, not frozen</li>
+                        </ul>
+                        <footer class="cards__item-footer">
+                            <button class="button button--read">Read Review</button>
+                            <button class="button button--order">Order Now</button>
+                        </footer>
+                    </div>
+
+                </div>
+                <div class="cards__item">
+                    <div class="cards__item-thumbnail">
+                        <button class="button button--play">
+                            <img src="./assets/img/play.png" />
+                        </button>
+                    </div>
+                    <div class="cards__item-content">
+                        <header>
+                            <img class="cards__item-logo" />
+                            <div class="cards__item-score">
+                                <span>Our Score:</span>
+                                <span>9.8</span>
+                            </div>
+                        </header>
+                        <ul class="cards__item-info">
+                            <li><img src="./assets/icons/v.svg" />$30 off your first order</li>
+                            <li><img src="./assets/icons/v.svg" />Healthy meals in 30 minutes</li>
+                            <li><img src="./assets/icons/v.svg" />Fresh ingredients, not frozen</li>
+                        </ul>
+                        <footer class="cards__item-footer">
+                            <button class="button button--read">Read Review</button>
+                            <button class="button button--order">Order Now</button>
+                        </footer>
+                    </div>
+
+                </div>
+            </article>
+
+            <aside class="aside">
+
+                <article class="articles">
+                    <h2>Articles</h2>
+                    <div class="articles__items">
+                        <div class="article--item">
+                            <img src="./assets/img/article1.png" />
+                            <div class="article--item-text">
+                                <h3>The Pros And Cons Of A Meal Delivery Service</h3>
+                                <button class="button button--more">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__items">
+                        <div class="article--item">
+                            <img src="./assets/img/article1.png" />
+                            <div class="article--item-text">
+                                <h3>The Pros And Cons Of A Meal Delivery Service</h3>
+                                <button class="button button--more">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__items">
+                        <div class="article--item">
+                            <img src="./assets/img/article1.png" />
+                            <div class="article--item-text">
+                                <h3>The Pros And Cons Of A Meal Delivery Service</h3>
+                                <button class="button button--more">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </aside>
+
+        </section>
+    </main>
+
+    <script>
+        function init() {
+            // Auto inject card thumnails
+            const thumbnailEls = document.querySelectorAll('.cards__item-thumbnail');
+            thumbnailEls.forEach((node, idx) => node.style.backgroundImage = `url('./assets/img/card${(idx + 1)}.png')`);
+
+            // Auto inject card logos
+            const logoEls = document.querySelectorAll('.cards__item-logo');
+            logoEls.forEach((node, idx) => node.src = `./assets/img/logo${(idx + 1)}.svg`);
+
+            // gg.
+        }
+
+        function toggleNav() {
+            document.querySelector('.header__nav').classList.toggle('show');
+        }
+
+        function stopProp(e) {
+            // e.stopPropagation();
+        }
+    </script>
+</body>
+
+</html>
